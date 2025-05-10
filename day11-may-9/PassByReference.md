@@ -25,7 +25,7 @@ console.log(spaceship);
 Well indeed it has changed the color from ~~red~~ to **glorious gold**.
 
 ---
-Here is the screenshot
+Here is the result
 ```json
 { homePlanet : 'Earth', color : 'red' }
 { homePlanet : 'Earth', color : 'glorious gold' }
@@ -58,7 +58,7 @@ Did it work the way you expected ? Do the `console.log(spaceship);` and see .
 It didn't work the **spaceship** object still the same. but why ? 
 Now let's take a peek over our function's code.
 
-`(obj)` this is taking our `objects reference` but inside the body it is using as a new `variable` , it doesn't know about that there is an `object` which is outside of his `scope` and the **function's body** is treating it as a **new variable**. if you do `console.log(obj);` , inside of that `tryReAssignment` function , it will show you that the **object's** property has been changed. But in reality that is a ** new variable** which only knows inside of that **function's body** not the *real object* which is outside.
+`(obj)` this is taking our `objects reference` but inside the body it is using as a new `variable` , it doesn't know about that there is an `object` which is outside of his `scope` and the **function's body** is treating it as a **new variable**. if you do `console.log(obj);` , inside of that `tryReAssignment` function , it will show you that the **object's** property has been changed. But in reality that is a **new variable** which only knows inside of that **function's body** not the *real object* which is outside.
 
 So it is not changing the `real object`.
 
